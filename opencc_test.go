@@ -15,7 +15,7 @@ func TestConvert(t *testing.T) {
 	}
 
 	for k := range conversions {
-		s2t, err := New(k)
+		s2t, err := New(k, "/usr/local/share/gocc")
 		if err != nil {
 			t.Errorf("New %s error:%+v", k, err)
 		}
